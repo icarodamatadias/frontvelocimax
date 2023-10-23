@@ -1,0 +1,62 @@
+.imagem-dodge{
+    background-image: url(../../../assets/image/imagem1_RAM_pag_home.jpeg);
+    width: 100%;
+    height: 740px;
+    margin-top: -20px;
+    filter: blur(10px);
+    filter: brightness(20%);
+    position: relative;
+}
+
+.bordao-anuncio{
+    position: absolute;
+    top: 350px;
+    color: white;
+    margin-left: 100px;
+    width: 40%;
+    height: 250px;
+    text-align: left;
+
+    font-family: sans-serif;
+}
+.link-bordao{
+    display: flex;
+    width: 162px;
+    height: 33px;
+}
+.bordao{
+    margin: -15px;
+}
+
+
+#paragrafo{
+    font-size: 30px;
+    -webkit-text-stroke: solid blue 2px;
+  
+}
+#titulo1{
+    font-size: 88px;
+}
+#titulo2{
+    font-size: 75px;
+}
+
+.home-texto{  
+    display: flex;
+    margin: 20px;
+    text-align: center;
+}
+
+.home-texto-titulo{
+    color: #0A3359;
+}
+
+.home-texto-paragrafo{
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.barra-lateral{
+    border-right: 1px solid black;
+    height: 150px;
+}

@@ -1,0 +1,21 @@
+{  
+    "veiculos":[
+        {
+            "id": 1,
+            "placa": "jb db",
+            "modelo": "corola"
+            
+        },
+        {
+            "id": 2,
+            "placa": "bd0",
+            "modelo": "civic"
+            
+        },
+        {
+            "id": 3,
+            "placa": "bd0",
+            "modelo": "civic"
+        }
+    ]
+}

@@ -1,0 +1,57 @@
+.nav-bar{
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 130px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: none;
+}
+.logo{
+    padding: 5px;
+    margin-left: -40px;
+    
+}
+
+.caixa{
+    display: flex;
+    justify-content: space-between;
+}
+
+.pesquisa{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 40px;
+    width: 250px;
+    height: 38px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    box-shadow: 3px 3px 5px rgb(87, 86, 86);
+
+}
+#campo-pesquisa{
+    border: none;
+    outline: none;
+    margin-left: 10%;
+
+}
+
+.menu_icon{
+    margin-left: 60px;
+    margin-right: 40px;
+}
+#menu_icon{
+    border: none;
+    background: none;
+    padding: 1px;
+}
+
+#botao-buscar{
+    background: none;
+    border: none;
+    outline: none;
+}
+#menu_list{
+    display: none;
+}

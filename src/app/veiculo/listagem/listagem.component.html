@@ -1,0 +1,28 @@
+<div class="container">
+    <h1>Angular 14 CRUD Example - ItSolutionStuff.com</h1>
+    
+    <a href="#" routerLink="/veiculo/cadstro/" class="btn btn-success">Create New veiculo</a>
+      
+    <table class="table table-striped">
+        <thead>
+              <tr>
+                <th>ID</th>
+                <th>Placa</th>
+                <th>Dados</th>
+                <th width="250px">Action</th>
+              </tr>
+        </thead>
+        <tbody>
+              <tr *ngFor="let veic of veiculos">
+                <td>{{ veic.id }}</td>
+                <td>{{ veic.placa }}</td>
+                <td>{{ veic.modelo }}</td>
+                <!--<td>
+                  <a href="#" routerLink="['/veiculos/', veiculo.id, 'view']" class="btn btn-info">View</a>
+                  <a href="#" routerLink="['/veiculos/', veiculo.id, 'edit']" class="btn btn-primary">Edit</a>
+                  <button type="button" (click)="deleteveiculo(veiculo.id)" class="btn btn-danger">Delete</button>
+                </td>-->
+              </tr>
+        </tbody>
+    </table>
+</div>
