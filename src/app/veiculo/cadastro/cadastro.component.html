@@ -1,1 +1,81 @@
-<p>cadastro works!</p>
+<div class="container">
+    <h1>Create New Veiculo</h1>
+  
+    <a href="#" routerLink="/veiculos/todos" class="btn btn-primary">Back</a>
+        
+    <form [formGroup]="form" (ngSubmit)="submit()">
+  
+        <div class="form-group">
+            <label for="rodas">rodas:</label>
+            <input 
+                formControlName="rodas"
+                id="rodas" 
+                type="text" 
+                class="form-control">
+            <div *ngIf="f['rodas'].touched && f['rodas'].invalid" class="alert alert-danger">
+                <div *ngIf="f['rodas'].errors && f['rodas'].errors['required']">rodas is required.</div>
+            </div>
+        </div>
+  
+        <div class="form-group">
+            <label for="placa">placa:</label>
+            <input 
+                formControlName="placa"
+                id="placa" 
+                type="text" 
+                class="form-control">
+            <div *ngIf="f['placa'].touched && f['placa'].invalid" class="alert alert-danger">
+                <div *ngIf="f['placa'].errors && f['placa'].errors['required']">placa is required.</div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="modelo">modelo:</label>
+            <input 
+                formControlName="modelo"
+                id="modelo" 
+                type="text" 
+                class="form-control">
+            <div *ngIf="f['modelo'].touched && f['modelo'].invalid" class="alert alert-danger">
+                <div *ngIf="f['modelo'].errors && f['modelo'].errors['required']">modelo is required.</div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="marca">marca:</label>
+            <input 
+                formControlName="marca"
+                id="marca" 
+                type="text" 
+                class="form-control">
+            <div *ngIf="f['marca'].touched && f['marca'].invalid" class="alert alert-danger">
+                <div *ngIf="f['marca'].errors && f['marca'].errors['required']">marca is required.</div>
+            </div>
+        </div>
+  
+        <div class="form-group">
+            <label for="descricao">descricao:</label>
+            <input 
+                formControlName="descricao"
+                id="descricao" 
+                type="text" 
+                class="form-control">
+            <div *ngIf="f['descricao'].touched && f['descricao'].invalid" class="alert alert-danger">
+                <div *ngIf="f['descricao'].errors && f['descricao'].errors['required']">descricao is required.</div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="estado_conservacao">estado_conservacao:</label>
+            <input 
+                formControlName="estado_conservacao"
+                id="estado_conservacao" 
+                type="text" 
+                class="form-control">
+            <div *ngIf="f['estado_conservacao'].touched && f['estado_conservacao'].invalid" class="alert alert-danger">
+                <div *ngIf="f['estado_conservacao'].errors && f['estado_conservacao'].errors['required']">estado_conservacao is required.</div>
+            </div>
+        </div>
+        <button class="btn btn-primary" type="submit" [disabled]="!form.valid">Submit</button>
+    </form>
+</div>

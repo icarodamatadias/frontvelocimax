@@ -11,7 +11,6 @@ export class ListagemComponent implements OnInit{
  
 
   veiculos: Veiculo[] = [];
-  teste = ['texto 1', 'texto 2'];
   
   constructor(public veiculoService: VeiculoService) { }  
 
@@ -19,6 +18,8 @@ export class ListagemComponent implements OnInit{
     this.veiculoService.getAll().subscribe((data: Veiculo[])=>{
       this.veiculos = data;
       console.log(this.veiculos);
+      console.log(this.veiculos);
+      //alert(this.veiculos);
     }) 
      
   }

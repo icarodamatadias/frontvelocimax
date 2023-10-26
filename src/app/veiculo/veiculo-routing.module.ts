@@ -7,10 +7,10 @@ import { EditComponent } from './edit/edit.component';
   
 const routes: Routes = [
   //{ path: 'veiculos', redirectTo: 'veiculos/listagem', pathMatch: 'full'},
-  { path: 'veiculos', component: ListagemComponent},
-  { path: 'veiculos/veiculoId/view', component: ViewComponent },
+  { path: 'veiculos/todos', component: ListagemComponent},
+  { path: 'veiculos/view/:veiculoId', component: ViewComponent },
   { path: 'veiculos/cadastro', component:CadastroComponent },
-  { path: 'veiculos/veiculoId/edit', component: EditComponent } 
+  { path: 'veiculos/edit/:veiculoId', component: EditComponent } 
 ];
   
 @NgModule({

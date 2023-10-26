@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { VeiculoRoutingModule } from './veiculo-routing.module';
 import { ListagemComponent } from './listagem/listagem.component';
@@ -17,7 +18,9 @@ import { CadastroComponent } from './cadastro/cadastro.component';
   ],
   imports: [
     CommonModule,
-    VeiculoRoutingModule
+    VeiculoRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class VeiculoModule { }

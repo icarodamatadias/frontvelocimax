@@ -1,1 +1,36 @@
-<p>view works!</p>
+<div class="container">
+    <h1>View Post</h1>
+  
+    <a href="#" routerLink="/veiculos/todos" class="btn btn-primary">Back</a>
+   
+    <div>
+        <strong>ID:</strong>
+        <p>{{ veiculo.id }}</p>
+    </div>
+   
+    <div>
+        <strong>Numero de Rodas:</strong>
+        <p>{{ veiculo.rodas }}</p>
+    </div>
+   
+    <div>
+        <strong>Placa:</strong>
+        <p>{{ veiculo.placa }}</p>
+    </div>
+    <div>
+        <strong>Modelo:</strong>
+        <p>{{ veiculo.modelo }}</p>
+    </div>
+    <div>
+        <strong>Marca:</strong>
+        <p>{{ veiculo.marca }}</p>
+    </div>
+    <div>
+        <strong>Descrição:</strong>
+        <p>{{ veiculo.descricao }}</p>
+    </div>
+    <div>
+        <strong>Estado de Conservação:</strong>
+        <p>{{ veiculo.estado_conservacao }}</p>
+    </div>
+</div>

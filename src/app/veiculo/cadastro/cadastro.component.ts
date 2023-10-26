@@ -52,7 +52,7 @@ export class CadastroComponent implements OnInit {
     console.log(this.form.value);
     this.veiculoService.create(this.form.value).subscribe((res:any) => {
          console.log('Veiculo created successfully!');
-         this.router.navigateByUrl('veiculo/listagem');
+         this.router.navigateByUrl('veiculos/todos');
     })
   }
   
